@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {ReactiveFormsModule, UntypedFormBuilder, UntypedFormGroup} from "@angular/forms";
+import {KeycloakServiceService} from "../../core/services/keycloak/keycloak-service.service";
 
 @Component({
   selector: 'app-login',
@@ -13,7 +14,7 @@ import {ReactiveFormsModule, UntypedFormBuilder, UntypedFormGroup} from "@angula
 export class LoginComponent implements OnInit{
   loginForm!: UntypedFormGroup;
 
-  constructor(private untypedfb: UntypedFormBuilder) {
+  constructor(private untypedfb: UntypedFormBuilder, private keycloakService: KeycloakServiceService) {
   }
 
   ngOnInit(): void {
