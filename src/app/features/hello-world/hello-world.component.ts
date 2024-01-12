@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {map, Observable} from "rxjs";
 import {AsyncPipe, CommonModule} from "@angular/common";
-import {HttpHelloWorldService} from "../../core/services/http-hello-world.service";
+import {HttpHelloWorldService} from "../../core/services/http-hello-world/http-hello-world.service";
 import {HttpClient} from "@angular/common/http";
 
 @Component({
